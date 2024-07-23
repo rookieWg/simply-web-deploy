@@ -10,8 +10,7 @@ $password = $args[5]
 $delete = $args[6]
 $skipDirectory = $args[7]
 
-$computerNameArgument = $computerName + '/MsDeploy.axd?site=' + $recycleApp
-
+$computerNameArgument = $computerName + '/MsDeploy.axd?site=' 
 $directory = Split-Path -Path (Get-Location) -Parent
 $baseName = (Get-Item $directory).BaseName
 $contentPath = Join-Path(Join-Path $directory $baseName) $source
